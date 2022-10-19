@@ -24,12 +24,61 @@
                 <li><a class="active" href="shop.html">Shop</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                <li><a href="Login.html">Login</a></li>
-                <li><a href="carrinho.html"><i class="fa-solid fa-cart-shopping">0</i></a></li>
+                <li><a href="login2.html">Login</a></li>
+                <li><a><i class="fa-solid fa-cart-shopping" id="cart-icon"></i></a></li>
+
+            <!-- carrinho -->  
+           
+            <div class="carrinho">
+                <h2 class="carrinho-title">Seu Carrinho</h2>
+                 <div class="carrinho-content">
+                     <div class="carrinho-box">
+                         <img src="../assets/Categoria Anime/camiseta/camiseta 1.png" alt="" class="carrinho-img"> 
+                         <div class="detail-box">
+                             <div class="carrinho-product-title">Camiseta do Yuji Tadori</div>
+                             <div class="carrinho-price"><R145></R145></div>
+                             <input type="number" value="1" class="carrinho-quantity">
+                         </div>
+                         <!-- remover do carrinho  -->
+                         <i class="fa-solid fa-trash cart-remove"></i>
+
+                         <img src="../assets/Categoria Anime/moleton/moletom 1.png" alt="" class="carrinho-img"> 
+                         <div class="detail-box">
+                             <div class="carrinho-product-title">Moletom do Killua Zoldyck</div>
+                             <div class="carrinho-price"><R145></R145></div>
+                             <input type="number" value="1" class="carrinho-quantity">
+                         </div>
+                         <!-- remover do carrinho  -->
+                         <i class="fa-solid fa-trash cart-remove"></i>
+
+                         <img src="../assets/Categoria Anime/calça/calça 1.png" alt="" class="carrinho-img"> 
+                         <div class="detail-box">
+                             <div class="carrinho-product-title">Calça jeans do Katsuki Bakugo</div>
+                             <div class="carrinho-price"><R145></R145></div>
+                             <input type="number" value="1" class="carrinho-quantity">
+                         </div>
+                         <!-- remover do carrinho  -->
+                         <i class="fa-solid fa-trash cart-remove"></i>
+                     </div>
+                 </div>
+                 <!-- Total  -->
+                     <div class="total">
+                         <div class="total-title">Total:</div>
+                         <div class="total-price">$199</div> 
+                     </div>
+                     <!-- botao comprar  -->
+                     <button type="button" class="normal-cart">Comprar</button>
+                     <!-- Fechar carrinho  -->
+                     <i class="fa-solid fa-x" id="close-cart"></i>
+                
             </div>
             </ul>
         </div>
     </section>
+
+    <!-- Link para o js  -->
+
+    <script src="../Editors/main.js"></script>
     
     <!-- banner -->
 
@@ -58,7 +107,7 @@
                     </div>
                     <h4>R$45</h4>
                 </div>
-                <a href="carrinho.html"><i class="fa-solid fa-cart-shopping cart cart"></i></a>
+                <a><i class="fa-solid fa-cart-shopping cart cart"></i></a>
             </div>
             <div class="pro" onclick="window.location.href='sproduct-2.html'">
                 <img src="../assets/Categoria Anime/moleton/moletom 2.png" alt="">

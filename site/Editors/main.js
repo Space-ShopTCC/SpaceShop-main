@@ -20,6 +20,17 @@ if (document.readyState == 'loading'){
 
 // fazer a funçao
 function ready(){
+
+//add to cart
+function addCartClicker(event){
+    var button = event.target;
+    var product1 = button.parentElement;
+    var title = product1.getElementsByClassName('product-title')[0].innerText;
+    var price = product1.getElementsByClassName('price')[0].innerText;
+    var productImg = product1.getElementsByClassName('product-img')[0].src;
+    console.log(title, price, productImg);
+}
+
     //remove itens from cart
     var removeCartButtons = document.getElementsByClassName('cart-remove');
     console.log(removeCartButtons);
@@ -98,7 +109,15 @@ document.querySelector('#bntSignup')
     btnColor.style.left = "110px"
 })
 
+//login 2
 
+'use strict'
 
+const loginContainer = document.getElementById('login-container')
+
+const moveOverlay = () => loginContainer.classList.toggle('move')
+
+document.getElementById('open-register').addEventListener('click', moveOverlay)
+document.getElementById('open-login').addEventListener('click', moveOverlay)
 
 
