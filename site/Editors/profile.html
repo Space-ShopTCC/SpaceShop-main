@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Account Settings UI Design</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../Editors/style.css">
+	<link rel="shortcut icon" href="faviconsp.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+	
+</head>
+<body>
+
+   <!-- cabeçalho  -->
+
+    <section id="header">
+        <div class="logo">
+        <a href="index.html"><img src="../assets/logo.png" class="logo" alt="logo"></a>
+        </div>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="sobre.html" >Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login2.html">Login</a></li>
+				<li><a class="active" href="profile.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a></a><i class="fa-solid fa-cart-shopping" id="cart-icon"></i></a></li>
+            
+            <!-- carrinho -->  
+           
+            <div class="carrinho">
+                <h2 class="carrinho-title">Seu Carrinho</h2>
+                 <div class="carrinho-content">
+                     <div class="carrinho-box">
+                         <img src="../assets/Categoria Anime/camiseta/camiseta 1.png" alt="" class="carrinho-img"> 
+                         <div class="detail-box">
+                             <div class="carrinho-product-title">Camiseta do Yuji Tadori</div>
+                             <div class="carrinho-price"><R145></R145></div>
+                             <input type="number" value="1" class="carrinho-quantity">
+                         </div>
+                         <!-- remover do carrinho  -->
+                         <i class="fa-solid fa-trash cart-remove"></i>
+
+                         <img src="../assets/Categoria Anime/moleton/moletom 1.png" alt="" class="carrinho-img"> 
+                         <div class="detail-box">
+                             <div class="carrinho-product-title">Moletom do Killua Zoldyck</div>
+                             <div class="carrinho-price"><R145></R145></div>
+                             <input type="number" value="1" class="carrinho-quantity">
+                         </div>
+                         <!-- remover do carrinho  -->
+                         <i class="fa-solid fa-trash cart-remove"></i>
+
+                         <img src="../assets/Categoria Anime/calça/calça 1.png" alt="" class="carrinho-img"> 
+                         <div class="detail-box">
+                             <div class="carrinho-product-title">Calça jeans do Katsuki Bakugo</div>
+                             <div class="carrinho-price"><R145></R145></div>
+                             <input type="number" value="1" class="carrinho-quantity">
+                         </div>
+                         <!-- remover do carrinho  -->
+                         <i class="fa-solid fa-trash cart-remove"></i>
+                     </div>
+                 </div>
+                 <!-- Total  -->
+                     <div class="total">
+                         <div class="total-title">Total:</div>
+                         <div class="total-price">$199</div> 
+                     </div>
+                     <!-- botao comprar  -->
+                     <button type="button" class="normal-cart">Comprar</button>
+                     <!-- Fechar carrinho  -->
+                     <i class="fa-solid fa-x" id="close-cart"></i>
+
+             </div>
+            
+            </ul>
+        </div>
+    </section>
+
+    <!-- Link para o js  -->
+
+    <script src="../Editors/main.js"></script>
+
+	<section class="py-5 my-5">
+		<div class="container">
+			<div class="bg-white shadow rounded-lg d-block d-sm-flex">
+				<div class="profile-tab-nav border-right">
+					<div class="p-4">
+						<div class="img-circle text-center mb-3">
+							<img src="../assets/profile-image.jpg" alt="Image" class="shadow">
+						</div>
+						<h4 class="text-center">Nome do Cliente</h4>
+					</div>
+					<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+						<a class="nav-link active" id="account-tab" data-toggle="pill" href="#account" role="tab" aria-controls="account" aria-selected="true">
+							<i class="fa fa-home text-center mr-1"></i> 
+							Sua Conta
+						</a>
+						<a class="nav-link" id="password-tab" data-toggle="pill" href="#password" role="tab" aria-controls="password" aria-selected="false">
+							<i class="fa fa-key text-center mr-1"></i> 
+							Senhas
+						</a>
+						<a class="nav-link" id="security-tab" data-toggle="pill" href="#security" role="tab" aria-controls="security" aria-selected="false">
+							<i class="fa fa-user text-center mr-1"></i> 
+							Segurança
+						</a>
+					</div>
+				</div>
+				<div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
+					<div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
+						<h3 class="mb-4">Configuração da Conta</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Primeiro Nome</label>
+								  	<input type="text" class="form-control" value="">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Sobrenome</label>
+								  	<input type="text" class="form-control" value="">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Email</label>
+								  	<input type="text" class="form-control" value="">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Numero de Telefone</label>
+								  	<input type="text" class="form-control" value="">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+								  	<label>Bio</label>
+									<textarea class="form-control" rows="4"></textarea>
+								
+								</div>
+							</div>
+						</div>
+						<div>
+							<button class="profile-button">Atualizar</button>
+							<button class="profile-button-light">Cancelar</button>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
+						<h3 class="mb-4">Configuração das Senhas</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Senha antiga</label>
+								  	<input type="password" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Senha Nova</label>
+								  	<input type="password" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Confirme sua Senha</label>
+								  	<input type="password" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div>
+							<button class="profile-button">Atualizar</button>
+							<button class="profile-button-light">Cancelar</button>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
+						<h3 class="mb-4">Configurções de Segurança</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Login</label>
+								  	<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Autenticação de dois fatores</label>
+								  	<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="recovery">
+										<label class="form-check-label" for="recovery">Recuperação</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<button class="profile-button">Atualizar</button>
+							<button class="profile-button-light">Cancelar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	    <!-- rodape -->
+
+		<footer class="section-p1">
+			<div class="col">
+				<img class="logo" src="../assets/logo.png" width="130px" alt="logo">
+				<h4>Contato</h4>
+				<p><strong>Endereço: </strong>ITB Brasilo Flores, Barueri-SP</p>
+				<p><strong>Numero: </strong>+55 11 97082-0335</p>
+				<p><strong>Email: </strong>RocketStreamTCC@gmail.com</p>
+				<div class="follow">
+					<h4>Rede Sociais</h4>
+					<div class="icon">
+						<i class="fa-brands fa-facebook-f"></i>
+						<i class="fa-brands fa-instagram"></i>
+						<i class="fa-brands fa-twitter"></i>
+						<i class="fa-brands fa-youtube"></i>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<h4>Quem somos ?</h4>
+				<a href="#">Somos um grupo de alunos do INFO2GM do ITB Brasilio Flores,</a>
+				<a href="#">Produzimos esse site do 0, para o TCC que será</a>
+				<a href="#">Apresentado no final desse ano de 2022.</a>
+			</div>
+			<div class="col install">
+				<h4>Tambem temos um app</h4>
+				<p>Baixe nosso app aqui: </p> 
+				<div class="row">
+					<img src="../assets/Google-play-instalar.png" width="180px" alt="">
+				</div>
+			</div>
+			<div class="copyright">
+				<p>2022, Joao Victor Takasake - HTML CSS - loja de roupas geek</p>
+			</div>
+		</footer>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	
+</body>
+</html>
