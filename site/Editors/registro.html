@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceShop</title>
+    <link rel="shortcut icon" href="faviconsp.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+   <!-- cabeçalho  -->
+
+   <section id="header">
+    <div class="logo">
+    <a href="index.html"><img src="../assets/logo.png" class="logo" alt="logo"></a>
+    </div>
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="sobre.html" >Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a class="active" href="login3.html">Login</a></li>
+            <li> <a href="profile.html"><i class="fa-solid fa-user"></i></a></li>
+            <li><a></a><i class="fa-solid fa-cart-shopping" id="cart-icon"></i></a></li>
+        </ul>
+   </section>
+
+    <section class="area-login">
+        <div class="login registro">
+            <div>
+                <img src="/site/assets/logo.png">
+            </div>
+                <form method="post">
+                    <input type="text" name="nome" placeholder="Nome" autofocus>
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="password" name="senha" placeholder="Senha">
+                    <input type="submit" value="registrar">
+                </form>
+            <p>Já tem uma conta?<a href="#" onclick="window.location.href='login3.html'">Entrar na conta</a></p>
+        </div>
+    </section>
+</body>
+</html>

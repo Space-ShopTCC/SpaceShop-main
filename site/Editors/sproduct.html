@@ -24,71 +24,45 @@
                 <li><a class="active" href="shop.html">Shop</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                <li><a href="login2.html">Login</a></li>
-                <li> <a href="profile.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="login3.html">Login</a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i></a></li>
                 <li><a></a><i class="fa-solid fa-cart-shopping" id="cart-icon"></i></a></li>
             
             <!-- carrinho -->  
            
             <div class="carrinho">
                 <h2 class="carrinho-title">Seu Carrinho</h2>
-                 <div class="carrinho-content">
-                     <div class="carrinho-box">
-                         <img src="../assets/Categoria Anime/camiseta/camiseta 1.png" alt="" class="carrinho-img"> 
-                         <div class="detail-box">
-                             <div class="carrinho-product-title">Camiseta do Yuji Tadori</div>
-                             <div class="carrinho-price"><R145></R145></div>
-                             <input type="number" value="1" class="carrinho-quantity">
-                         </div>
-                         <!-- remover do carrinho  -->
-                         <i class="fa-solid fa-trash cart-remove"></i>
-
-                         <img src="../assets/Categoria Anime/moleton/moletom 1.png" alt="" class="carrinho-img"> 
-                         <div class="detail-box">
-                             <div class="carrinho-product-title">Moletom do Killua Zoldyck</div>
-                             <div class="carrinho-price"><R145></R145></div>
-                             <input type="number" value="1" class="carrinho-quantity">
-                         </div>
-                         <!-- remover do carrinho  -->
-                         <i class="fa-solid fa-trash cart-remove"></i>
-
-                         <img src="../assets/Categoria Anime/calça/calça 1.png" alt="" class="carrinho-img"> 
-                         <div class="detail-box">
-                             <div class="carrinho-product-title">Calça jeans do Katsuki Bakugo</div>
-                             <div class="carrinho-price"><R145></R145></div>
-                             <input type="number" value="1" class="carrinho-quantity">
-                         </div>
-                         <!-- remover do carrinho  -->
-                         <i class="fa-solid fa-trash cart-remove"></i>
-                     </div>
-                 </div>
+                 <div class="carrinho-content"></div>
                  <!-- Total  -->
                      <div class="total">
                          <div class="total-title">Total:</div>
-                         <div class="total-price">$199</div> 
+                         <div class="total-price">$0</div> 
                      </div>
                      <!-- botao comprar  -->
                      <button type="button" class="normal-cart">Comprar</button>
                      <!-- Fechar carrinho  -->
                      <i class="fa-solid fa-x" id="close-cart"></i>
+            </div>
             </ul>
         </div>
     </section>
 
-        <!-- Link para o js  -->
+    <!-- Link para o js  -->
+    <script src="../Editors/testeErro.js" defer></script>
+    <script src="../Editors/main.js" defer></script>
 
-        <script src="../Editors/main.js"></script>
+
 
     <!-- detalhes do produto -->
     
     <section id="prodetails" class="section-p1">
         <div class="single-pro-image">
-            <img src="../assets/Categoria Anime/camiseta/camiseta 1.png" width="100%" id="MainImg" alt="">
+            <img class="singleProImage" src="../assets/Categoria Anime/camiseta/camiseta 1.png" alt="" >
         </div>
         <div class="single-pro-details">
-            <h6>Home/Camiseta</h6>
-            <h4>Camiseta do Yuji Tadori</h4>
-            <h2>R$45</h2>
+            <h6>Home/Camiseta</h6>          
+                <h4 class="tituloProduto">Camiseta do Yuji Tadori</h4>
+                <h2 class="ProductPrice">R$45</h2>
             <select>
                 <option>Tamanho</option>
                 <option>P</option>
@@ -98,7 +72,7 @@
                 <option>XG</option>
             </select>
             <input type="number" value="1">
-            <button> <strong>Comprar</strong></button>
+            <button class="normal btncart"><strong>Comprar</strong></button>
             <h4>Detalhes do Produto</h4>
             <span>Camiseta branca manga curta, com estampa do Yuji Tadori 
                 de Jujutsu Kaisen. Material 100% algodão.
@@ -106,6 +80,11 @@
         </div>
 
     </section>
+
+
+            <!-- Link para o js  -->
+
+        <script src="../Editors/main.js"></script>
 
     <!-- produtos -->
 
@@ -221,8 +200,5 @@
     
 
 
-    
-    
-    <script src="script.js"></script>
 </body>
 </html>

@@ -50,8 +50,8 @@ p {
 
 button.normal {
     font-size: 14px;
-    font-weight:  600;
-    padding: 15px 30px;
+    font-weight:  600px;
+    padding: 15px 12px;
     color: white;
     background-color: #7d57f9;
     border-radius: 4px;
@@ -1141,7 +1141,90 @@ a {
     transition: 0.2s;
 }
 
+/* login3 */
 
+.area-login {
+    background-image: url("../assets/background-ceu-estrelado.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 660px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login {
+    background-color: #cec3f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 355px;
+    height: 320px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login input {
+    margin-top: 10px;
+    color: black;
+    background-color: #E3E6F3;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.login input[type="submit"] {
+    color: white;
+}
+
+.login img {
+    width: 100px;
+    height: auto;
+}
+
+input::placeholder {
+    color: #7d57f9;
+    font-size: 14px;
+}
+form [type="submit"] {
+    display: block;
+    background-color: #7d57f9;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+p{
+    color: #7d57f9;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+/* registro */
+
+.registro {
+    background-color: #cec3f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 355px;
+    height: 370px;
+    padding: 25px;
+    border-radius: 10px;
+}
 
 
  
